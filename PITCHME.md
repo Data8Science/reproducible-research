@@ -1,19 +1,16 @@
 ##### 
 
-+++?image=https://cdn-images-1.medium.com/max/1000/1*xzILVOWjZq9ReweYlODFsw.jpeg
+?image=https://cdn-images-1.medium.com/max/1000/1*xzILVOWjZq9ReweYlODFsw.jpeg
 
 ---
 
 ## Reproducible Research in Data Science
 
-##### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#e49436">Shifath</span>
+##### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#e49436">Shifath Nafis</span>
 
 ---
 
 ## Welcome!
-
-<span style="font-size:0.6em; color:gray">lay the groundwork for a culture of reproducibility in our data analytics projects</span> |
-<span style="font-size:0.6em; color:gray">template for upcoming amnesty internation hackathon</span>
 
 +++
 
@@ -31,359 +28,237 @@ template for upcoming amnesty internation hackathon
 
 ---
 
-## Markdown Slides
-<span style="font-size:0.6em; color:gray">Press Down key for details.</span> |
-<span style="font-size:0.6em; color:gray">See <a href="https://github.com/gitpitch/gitpitch/wiki/Slide-Markdown" target="_blank">GitPitch Wiki</a> for details.</span>
+## Data Analysis Worflow
+
+?image=https://cacm.acm.org/system/assets/0001/3678/rp-overview.jpg
+
++++
+
+#### Key steps
+
+<br>
+
+- define the question
+- identify data sets
+- obtain the data 
+- clean the data
+- exploratory data analysis
+- statistical modelling/prediction
+- interpret results
+- challenge results
+- synthesise/write up results
+- create reproducible code
+
+
 
 
 +++
 
-#### Use GitHub Flavored Markdown
-#### For Slide Content Creation
+#### Case Study 1
 
 <br>
 
-The same tool you use to create project **READMEs** and **Wikis** for your Git repos.
+Mining Mobile Device Usage and Data for a recommendation platform
+
++++
+
+#### Case Study 2
+
+<br>
+
+Benford's Law and Stripe Transcation Amounts
+
+
 
 ---
 
-## Code Slides
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
-<span style="font-size:0.6em; color:gray">See <a href="https://github.com/gitpitch/gitpitch/wiki/Code-Slides" target="_blank">GitPitch Wiki</a> for details.</span>
+## Observations
+The most common way to produce and share results from these sorts of studies is to compose a pdf/powerpoint and attach some graphs. 
+
+But this means that viewers of the report are unable to review the work in depth, or to extend it themselves. 
+
+It’s very easy to commit methodological errors when asking questions of data; an unintended bias here, or a missed corner case there, can lead to entirely incorrect conclusions.
 
 +++
 
-#### Use Markdown Code Blocks
+#### Reproducible research
 
 <br>
 
-And enjoy code syntax highlighting for dozens of languages powered by <a target="_blank" href="highlight.js](https://highlightjs.org">highlight.js</a>.
+=
+
+Code (with infrastructure-as-a-code)
+
++
+
+Data (with metadata)
+
++
+
+Documentation (code+data=literate programming)
+
+
 
 +++
 
-```JavaScript
-// JavaScript Code Block
+#### Literate Programming, Donald Knuth (84)
 
-$('button').click(function(){
-    $('h1, h2, p').addClass('blue')
-    $('div').removeClass('important')
-    $('h3').toggleClass('error')
-    $('#foo').attr('alt', 'Lorem Ipsum')
-});
-```
+<br>
+
+Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. 
 
 +++
 
-```Scala
-// Scala Code Block
+#### Reproducible research
 
-HashMap params = HashMap(n -> 10, mean -> 5)
+<br>
 
-// Define executable for R stats#rnorm function call.
-OCPUTask task = OCPU.R()
-                    .pkg("stats")
-                    .function("rnorm")
-                    .input(params.asJava)
-                    .library()
-```
+= Openness 
 
-+++
-
-```Go
-// Go Code Block
-
-package main
-
-import "fmt"
-
-func swap(x, y string) (string, string) {
-    return y, x
-}
-
-func main() {
-    a, b := swap("hello", "world")
-    fmt.Println(a, b)
-}
-```
+= Crowd Innovation
 
 ---
 
-## GIST Slides
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
-<span style="font-size:0.6em; color:gray">See <a href="https://github.com/gitpitch/gitpitch/wiki/GIST-Slides" target="_blank">GitPitch Wiki</a> for details.</span>
+## How can you make your analysis reproducible
+<span style="font-size:0.6em; color:gray">data carpentry</span> |
+<span style="font-size:0.6em; color:gray">software carpentry</span>
 
 +++
 
-#### GitHub GIST
-#### Building Blocks For Any Presentation
+#### 1. plan for reproducibility before you begin
 
 <br>
 
-Enjoy 100% reusable code snippets, excellent syntax highlighting, code indentation and styling. 
+* project organisation
+* data management plan
 
-+++?gist=8da53731fd54bab9d5c6
-
-+++?gist=28ee3d19ddef9d51b15adbdfe9ed48da
-
----
-
-## Image Slides
-## [ Inline ]
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
-<span style="font-size:0.6em; color:gray">See <a href="https://github.com/gitpitch/gitpitch/wiki/Image-Slides" target="_blank">GitPitch Wiki</a> for details.</span>
 
 +++
 
-#### Make A Visual Statement
+#### 2. keep track of things
 
 <br>
 
-Use inline images to lend a *visual punch* to your slideshow presentations.
+* version control
+* documentation (code + software environment)
+
++++
+
+#### 3. let your computer do the work
+
+<br>
+
+- think about the entire pipeline: use coded/automated steps as opposed to doing things by hand
+- (data) infrastructure-as-code
+- save data + code = output
+
++++
+
+#### 4. publish and share
+
+<br>
+
+- knowledge repository 
+
+------
+
+## Tools
+
+* Project organisation: Cookiecutter Data Science
+* Code repository: GitHub
+* Code+Documentation: Jupyter Notebook
+* Data Science Workbench: Google Datalab
+* Knowledge Repository
+
+
 
 
 +++
 
-<span style="color:gray; font-size:0.7em">Inline Image at <b>Absolute URL</b></span>
+#### Project organisation: Cookiecutter Data Science
 
-![Image-Absolute](https://d1z75bzl1vljy2.cloudfront.net/kitchen-sink/octocat-privateinvestocat.jpg)
-
-<span style="color:gray; font-size: 0.5em;">the <b>Private Investocat</b> by <a href="https://github.com/jeejkang" target="_blank">jeejkang</a></span>
-
+http://drivendata.github.io/cookiecutter-data-science/
 
 +++
 
-<span style="color:gray; font-size:0.7em">Inline Image at GitHub Repo <b>Relative URL</b></span>
+#### Code repository: GitHub
 
-![Image-Absolute](assets/octocat-de-los-muertos.jpg)
-
-<span style="color:gray; font-size:0.5em">the <b>Octocat-De-Los-Muertos</b> by <a href="https://github.com/cameronmcefee" target="_blank">cameronmcefee</a></span>
-
-
-+++
-
-<span style="color:gray; font-size:0.7em"><b>Animated GIFs</b> Work Too!</span>
+https://try.github.io
 
 ![Image-Relative](https://d1z75bzl1vljy2.cloudfront.net/kitchen-sink/octocat-daftpunkocat.gif)
 
-<span style="color:gray; font-size:0.5em">the <b>Daftpunktocat-Guy</b> by <a href="https://github.com/jeejkang" target="_blank">jeejkang</a></span>
++++
 
----
+#### Code+Documentation: Jupyter Notebook
 
-## Image Slides
-## [ Background ]
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
-<span style="font-size:0.6em; color:gray">See <a href="https://github.com/gitpitch/gitpitch/wiki/Image-Slides#background" target="_blank">GitPitch Wiki</a> for details.</span>
+Ju-py-te-R
+
+Julia
+
+Python
+
+LaTeX
+
+R
+
+How do we organize our Jupyter notebooks so that our work is:
+
+- collaborative (we work on teams)
+
+
+- reliably captured and transparently shared
+
+
+- clearly deliver insights to our clients
 
 +++
 
-#### Make A Bold Visual Statement
+Best practices:
 
-<br>
+* Differentiate the kinds of notebooks into two main categories - lab notebooks and deliverable notebooks
 
-Use high-resolution background images for maximum impact.
+* Name the develop/lab-notebooks with the following convention:
 
-+++?image=https://d1z75bzl1vljy2.cloudfront.net/kitchen-sink/victory.jpg
+  - [ISO 8601 date]-**[DS-initials]**-[2-4 word description].ipynb
+  - 2017-05-19-**sn**-transactions-first-digit-distribution.ipynb
 
-+++?image=https://d1z75bzl1vljy2.cloudfront.net/kitchen-sink/127.jpg
+* Organisation of notebook folder: 
 
----
+  * data # Backed up outside of version control
+  * deliver # Final polished Notebooks for publication
+  * develop # Lab Notebooks stored here
+  * figures # Figures stored here
+  * src # Scripts/modules stored here
 
-## Video Slides
-## [ Inline ]
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
-<span style="font-size:0.6em; color:gray">See <a href="https://github.com/gitpitch/gitpitch/wiki/Video-Slides" target="_blank">GitPitch Wiki</a> for details.</span>
+* Sharing/Publication: 
 
-+++
+  * Each Data Scientist has their own dev branch
 
-#### Bring Your Presentations Alive
+  * Work is saved and pushed on dev branch daily
 
-<br>
+  * When ready to merge to master, pull request
 
-Embed *YouTube*, *Vimeo*, *MP4* and *WebM* inline on any slide.
+    And, finally... commit:
 
-+++
+    * `.ipynb`
+    * `.py`
+    * `.html`
+    * and figures
 
-![YouTube Video](https://www.youtube.com/embed/dNJdJIwCF_Y)
+    of all Notebooks (develop and deliver).
 
-+++
+    ​
 
-![Vimeo Video](https://player.vimeo.com/video/125471012)
+  +++ 
 
-+++
+  #### Data Science Workbench: Google Datalab
 
-![MP4 Video](http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4)
 
----
 
-## Video Slides
-## [ Background ]
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
-<span style="font-size:0.6em; color:gray">See <a href="https://github.com/gitpitch/gitpitch/wiki/Video-Slides#background" target="_blank">GitPitch Wiki</a> for details.</span>
 
-+++
 
-#### Maximize The Viewer Experience
+​	+++
 
-<br>
+​	Knowledge repository
 
-Go fullscreen with *MP4* and *WebM* videos.
-
-+++?video=http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4
-
----
-
-## Math Notation Slides
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
-<span style="font-size:0.6em; color:gray">See <a href="https://github.com/gitpitch/gitpitch/wiki/Math-Notation-Slides" target="_blank">GitPitch Wiki</a> for details.</span>
-
-+++
-
-
-#### Beautiful Math Rendered Beautifully
-
-<br>
-
-Use *TeX*, *LaTeX* and *MathML* markup powered by <a target="_blank" href="https://www.mathjax.org/">MathJax</a>.
-
-+++
-
-`$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$`
-
-+++
-
-`\begin{align}
-\dot{x} & = \sigma(y-x) \\
-\dot{y} & = \rho x - y - xz \\
-\dot{z} & = -\beta z + xy
-\end{align}`
-
-+++
-
-##### The Cauchy-Schwarz Inequality
-
-`\[
-\left( \sum_{k=1}^n a_k b_k \right)^{\!\!2} \leq
- \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-\]`
-
-+++
-
-##### The probability of getting \(k\) heads when flipping \(n\) coins is:
-
-`\[P(E) = {n \choose k} p^k (1-p)^{ n-k} \]`
-
-+++
-
-##### In-line Mathematics
-
-This expression `\(\sqrt{3x-1}+(1+x)^2\)` is an example of an inline equation.
-
----
-
-## Slide Fragments
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
-<span style="font-size:0.6em; color:gray">See <a href="https://github.com/gitpitch/gitpitch/wiki/Fragment-Slides" target="_blank">GitPitch Wiki</a> for details.</span>
-
-+++
-
-#### Reveal Slide Concepts Piecemeal
-
-<br>
-
-Step through slide content in sequence to slowly reveal the bigger picture.
-
-+++
-
-- Java
-- Groovy |
-- Kotlin |
-- Scala  |
-- The JVM rocks! |
-
-+++
-
-<table>
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>25</td>
-  </tr>
-  <tr class="fragment">
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-  <tr class="fragment">
-    <td>John</td>
-    <td>Doe</td>
-    <td>43</td>
-  </tr>
-</table>
-
----
-## <span style="text-transform: none">PITCHME.yaml</span> Settings
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
-<span style="font-size:0.6em; color:gray">See <a href="https://github.com/gitpitch/gitpitch/wiki/Slideshow-Settings" target="_blank">GitPitch Wiki</a> for details.</span>
-
-+++
-
-#### Stamp Your Own Look and Feel
-
-<br>
-
-Set a default theme, custom logo, custom css, background image, and preferred code syntax highlighting style.
-
-+++
-
-#### Customize Slideshow Behavior
-
-<br>
-
-Enable auto-slide with custom slide intervals, presentation looping, and RTL flow.
-
----
-## Slideshow Keyboard Controls
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
-<span style="font-size:0.6em; color:gray">See <a href="https://github.com/gitpitch/gitpitch/wiki/Slideshow-Fullscreen-Mode" target="_blank">GitPitch Wiki</a> for details.</span>
-
-+++
-
-#### Try Out These Great Features Now!
-
-<br>
-
-| Mode       | On Key | Off Key |
-| ---------- | :----: | :-----: |
-| Fullscreen |   F    |   Esc   |
-| Overview   |   O    |    O    |
-| Blackout   |   B    |    B    |
-| Help       |   ?    |   Esc   |
-
----
-
-## GitPitch Social
-<span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
-<span style="font-size:0.6em; color:gray">See <a href="https://github.com/gitpitch/gitpitch/wiki/Slideshow-GitHub-Badge" target="_blank">GitPitch Wiki</a> for details.</span>
-
-+++
-
-#### Slideshows Designed For Sharing
-
-<br>
-
-- View any slideshow at its public URL
-- [Promote](https://github.com/gitpitch/gitpitch/wiki/Slideshow-GitHub-Badge) any slideshow using a GitHub badge
-- [Embed](https://github.com/gitpitch/gitpitch/wiki/Slideshow-Embedding) any slideshow within a blog or website
-- [Share](https://github.com/gitpitch/gitpitch/wiki/Slideshow-Sharing) any slideshow on Twitter, LinkedIn, etc
-- [Print](https://github.com/gitpitch/gitpitch/wiki/Slideshow-Printing) any slideshow as a PDF document
-- [Download and present](https://github.com/gitpitch/gitpitch/wiki/Slideshow-Offline) any slideshow offline
-
----
-
-## GO FOR IT.
-## JUST ADD <span style="color:#e49436; text-transform: none">PITCHME.md</span> ;)
+## 
