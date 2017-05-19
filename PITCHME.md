@@ -312,5 +312,9 @@ Knowledge Repository is focused on facilitating the sharing of knowledge between
 
 [Airbnb Knowledge Repository Project](https://medium.com/airbnb-engineering/scaling-knowledge-at-airbnb-875d73eff091)
 
++++
+
+<br>
+
 ?+++image=https://cdn-images-1.medium.com/max/1600/1*MPdpSg36RzBeinrL0wIGwQ.png
 
