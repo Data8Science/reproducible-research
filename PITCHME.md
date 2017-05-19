@@ -1,10 +1,12 @@
 ##### 
 
-?image=https://cdn-images-1.medium.com/max/1000/1*xzILVOWjZq9ReweYlODFsw.jpeg
+
 
 ---
 
 ## Reproducible Research in Data Science
+
+++?image=https://cdn-images-1.medium.com/max/1000/1*xzILVOWjZq9ReweYlODFsw.jpeg
 
 ##### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#e49436">Shifath Nafis</span>
 
@@ -22,15 +24,17 @@ lay the groundwork for a culture of reproducibility in our data analytics projec
 
 +++
 
-template for upcoming amnesty internation hackathon
+template/tips for upcoming amnesty internation hackathon
 
 +++
 
 ---
 
-## Data Analysis Worflow
+## Data Analytics Worflow
 
-?image=https://cacm.acm.org/system/assets/0001/3678/rp-overview.jpg
+<br>
+
+++?image=https://cacm.acm.org/system/assets/0001/3678/rp-overview.jpg
 
 +++
 
@@ -73,11 +77,9 @@ Benford's Law and Stripe Transcation Amounts
 ---
 
 ## Observations
-The most common way to produce and share results from these sorts of studies is to compose a pdf/powerpoint and attach some graphs. 
-
-But this means that viewers of the report are unable to review the work in depth, or to extend it themselves. 
-
-It’s very easy to commit methodological errors when asking questions of data; an unintended bias here, or a missed corner case there, can lead to entirely incorrect conclusions.
+* The most common way to produce and share results from these sorts of studies is to compose a pdf/powerpoint and attach some graphs. 
+* But this means that viewers of the report are unable to review the work in depth, or to extend it themselves. 
+* It’s very easy to commit methodological errors when asking questions of data; an unintended bias here, or a missed corner case there, can lead to entirely incorrect conclusions.
 
 +++
 
@@ -87,15 +89,15 @@ It’s very easy to commit methodological errors when asking questions of data; 
 
 =
 
-Code (with infrastructure-as-a-code)
+**Code** (with infrastructure-as-a-code)
 
 +
 
-Data (with metadata)
+**Data** (with metadata)
 
 +
 
-Documentation (code+data=literate programming)
+**Documentation** (code+data=literate programming)
 
 
 
@@ -129,8 +131,8 @@ Let us change our traditional attitude to the construction of programs: Instead 
 
 <br>
 
-* project organisation
-* data management plan
+* **project organisation**
+* **data management plan**
 
 
 +++
@@ -139,8 +141,8 @@ Let us change our traditional attitude to the construction of programs: Instead 
 
 <br>
 
-* version control
-* documentation (code + software environment)
+* **version control**
+* **documentation** (code + software environment)
 
 +++
 
@@ -164,22 +166,25 @@ Let us change our traditional attitude to the construction of programs: Instead 
 
 ## Tools
 
-* Project organisation: Cookiecutter Data Science
-* Code repository: GitHub
-* Code+Documentation: Jupyter Notebook
-* Data Science Workbench: Google Datalab
-* Knowledge Repository
-
+* **Project organisation**: Cookiecutter Data Science
+* **Version control**: GitHub
+* **Code+Documentation**: Jupyter Notebook
+* **Data Science Workbench**: Google Datalab
+* **Knowledge Repository**
 
 
 
 +++
+
+<br>
 
 #### Project organisation: Cookiecutter Data Science
 
 http://drivendata.github.io/cookiecutter-data-science/
 
 +++
+
+<br>
 
 #### Code repository: GitHub
 
@@ -189,33 +194,34 @@ https://try.github.io
 
 +++
 
+<br>
+
+++?image=https://stripe.com/img/blog/posts/reproducible-research/git-diagram@2x.png
+
 #### Code+Documentation: Jupyter Notebook
 
-Ju-py-te-R
+<br>
 
-Julia
+**Ju-py-te-R**
 
-Python
+- **Ju**lia
+- **Py**thon
+- La**Te**X
+- **R**
 
-LaTeX
++++ 
 
-R
+<br>
 
-How do we organize our Jupyter notebooks so that our work is:
+`https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks`
 
-- collaborative (we work on teams)
++++ 
 
+<br>
 
-- reliably captured and transparently shared
+**Best practices for organising your jupyter notebooks**:
 
-
-- clearly deliver insights to our clients
-
-+++
-
-Best practices:
-
-* Differentiate the kinds of notebooks into two main categories - lab notebooks and deliverable notebooks
+* Differentiate the kinds of notebooks into two main categories - **lab notebooks** and **deliverable notebooks**
 
 * Name the develop/lab-notebooks with the following convention:
 
@@ -251,14 +257,58 @@ Best practices:
 
   +++ 
 
-  #### Data Science Workbench: Google Datalab
+  <br>
+
+  **Data Sharing**
+
+  * How to share data: https://github.com/jtleek/datasharing
+  * Dataset Marketplace: https://datahub.io
+
+  ​
+
+#### Data Science Workbench: Docker and Google Datalab
+
+<br>
+
+Configuring a data science environment can be a pain. Can you "code" our development environment so others can run our analytics code is exactly the same environment used to develop the code?
+
++++
+
+<br>
+
+**Docker**
+
+If you haven't used Docker before, a good place to start is the [Docker User Guide](https://docs.docker.com/userguide/).
+
+`docker pull wiseio/datascience-docker`
+
++++
+
+<br>
+
+**Google Datalab**
+
+So far we have introduced a number of tools, wouldn't it be nice to have all of these tools packages into one component?
+
++++
+
+<br>
+
+Google Datalab = 
+
+GitHub+Jupyter+Docker
+
++Google Cloud Analytics Services (BigQuery, Tensorflow, Speech API, NLP API,...)
 
 
 
+#### Knowledge repository
 
+<br>
 
-​	+++
+Knowledge Repository is focused on facilitating the sharing of knowledge between data scientists and other technical roles using data formats and tools to better promote reproducible research.
 
-​	Knowledge repository
+[Airbnb Knowledge Repository Project](https://medium.com/airbnb-engineering/scaling-knowledge-at-airbnb-875d73eff091)
 
-## 
+?+++image=https://cdn-images-1.medium.com/max/1600/1*MPdpSg36RzBeinrL0wIGwQ.png
+
