@@ -1,18 +1,33 @@
-## Reproducible Research in Data Science
-##### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#e49436">Shifath</span>
+##### 
 
 +++?image=https://cdn-images-1.medium.com/max/1000/1*xzILVOWjZq9ReweYlODFsw.jpeg
 
 ---
 
-## Welcome!
-<span style="font-size:0.6em; color:gray">lay the groundwork for a culture of reproducibility in our data analytics projects</span> |
-<span style="font-size:0.6em; color:gray">template for upcoming amnesty internation hackathon</span>
+## Reproducible Research in Data Science
+
+##### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#e49436">Shifath</span>
 
 ---
 
 ## Welcome!
-For best viewing experience press **F** key to go fullscreen.
+
+<span style="font-size:0.6em; color:gray">lay the groundwork for a culture of reproducibility in our data analytics projects</span> |
+<span style="font-size:0.6em; color:gray">template for upcoming amnesty internation hackathon</span>
+
++++
+
+#### Objective
+
+<br>
+
+lay the groundwork for a culture of reproducibility in our data analytics projects
+
++++
+
+template for upcoming amnesty internation hackathon
+
++++
 
 ---
 
