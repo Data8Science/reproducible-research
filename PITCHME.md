@@ -6,8 +6,6 @@
 
 ## Reproducible Research in Data Science
 
-++?image=https://cdn-images-1.medium.com/max/1000/1*xzILVOWjZq9ReweYlODFsw.jpeg
-
 ##### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#e49436">Shifath Nafis</span>
 
 ---
@@ -34,7 +32,7 @@ template/tips for upcoming amnesty internation hackathon
 
 <br>
 
-++?image=https://cacm.acm.org/system/assets/0001/3678/rp-overview.jpg
++++?image=https://cacm.acm.org/system/assets/0001/3678/rp-overview.jpg
 
 +++
 
@@ -107,7 +105,7 @@ Benford's Law and Stripe Transcation Amounts
 
 <br>
 
-Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. 
+"Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do." 
 
 +++
 
@@ -121,7 +119,7 @@ Let us change our traditional attitude to the construction of programs: Instead 
 
 ---
 
-## How can you make your analysis reproducible
+## How can you make your analysis reproducible?
 <span style="font-size:0.6em; color:gray">data carpentry</span> |
 <span style="font-size:0.6em; color:gray">software carpentry</span>
 
@@ -150,9 +148,9 @@ Let us change our traditional attitude to the construction of programs: Instead 
 
 <br>
 
-- think about the entire pipeline: use coded/automated steps as opposed to doing things by hand
-- (data) infrastructure-as-code
-- save data + code = output
+- **think about the entire pipeline**: use coded/automated steps as opposed to doing things by hand
+- (data) **infrastructure-as-code**
+- save **data + code = output**
 
 +++
 
@@ -160,7 +158,9 @@ Let us change our traditional attitude to the construction of programs: Instead 
 
 <br>
 
-- knowledge repository 
+- **knowledge repository**
+
+  <br> 
 
 ------
 
@@ -196,7 +196,7 @@ https://try.github.io
 
 <br>
 
-++?image=https://stripe.com/img/blog/posts/reproducible-research/git-diagram@2x.png
++++?image=https://stripe.com/img/blog/posts/reproducible-research/git-diagram@2x.png
 
 #### Code+Documentation: Jupyter Notebook
 
@@ -300,7 +300,9 @@ GitHub+Jupyter+Docker
 
 +Google Cloud Analytics Services (BigQuery, Tensorflow, Speech API, NLP API,...)
 
++++
 
+<br>
 
 #### Knowledge repository
 
