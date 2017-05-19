@@ -1,5 +1,5 @@
-## The Kitchen Sink
-##### <span style="font-family:Helvetica Neue; font-weight:bold">A <span style="color:#e49436">Git</span>Pitch Feature Tour</span>
+## Reproducible Research in Data Science
+##### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#e49436">Shifath Nafis</span>
 
 ---
 
@@ -169,7 +169,6 @@ Use high-resolution background images for maximum impact.
 
 +++?image=https://d1z75bzl1vljy2.cloudfront.net/kitchen-sink/127.jpg
 
-
 ---
 
 ## Video Slides
@@ -196,7 +195,6 @@ Embed *YouTube*, *Vimeo*, *MP4* and *WebM* inline on any slide.
 +++
 
 ![MP4 Video](http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4)
-
 
 ---
 
@@ -331,7 +329,6 @@ Set a default theme, custom logo, custom css, background image, and preferred co
 
 Enable auto-slide with custom slide intervals, presentation looping, and RTL flow.
 
-
 ---
 ## Slideshow Keyboard Controls
 <span style="font-size:0.6em; color:gray">Press Down key for examples.</span> |
@@ -343,13 +340,12 @@ Enable auto-slide with custom slide intervals, presentation looping, and RTL flo
 
 <br>
 
-| Mode | On Key | Off Key |
-| ---- | :------: | :--------: |
-| Fullscreen | F |  Esc |
-| Overview | O |  O |
-| Blackout | B |  B |
-| Help | ? |  Esc |
-
+| Mode       | On Key | Off Key |
+| ---------- | :----: | :-----: |
+| Fullscreen |   F    |   Esc   |
+| Overview   |   O    |    O    |
+| Blackout   |   B    |    B    |
+| Help       |   ?    |   Esc   |
 
 ---
 
