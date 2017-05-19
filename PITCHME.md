@@ -1,5 +1,7 @@
 ## Reproducible Research in Data Science
-##### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#e49436">Shifath Nafis</span>
+##### <span style="font-family:Helvetica Neue; font-weight:bold"> <span style="color:#e49436">Shifath</span>
+
++++?image=https://d1z75bzl1vljy2.cloudfront.net/kitchen-sink/victory.jpg
 
 ---
 
